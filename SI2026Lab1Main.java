@@ -130,12 +130,8 @@ public class SI2026Lab1Main {
 
         System.out.println("Library initialized.");
         System.out.println(library.searchBookByTitle("1984"));
-<<<<<<< HEAD
-        
-=======
-
-
+        library.borrowBook("The Hobbit");
         library.printBooksByGenre("Programming");
->>>>>>> feature-genre-report
+    }
     }
 }
