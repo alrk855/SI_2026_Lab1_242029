@@ -92,8 +92,13 @@ class Library {
     }
 
     // TODO: Implement in branch feature-genre-report
-    public void printBooksByGenre(String genre) {
+public void printBooksByGenre(String genre) {
+    for (Book book : books) {
+        if (book.getGenre().equalsIgnoreCase(genre)) {
+            System.out.println(book);
+        }
     }
+}
 
     public int countAvailableBooks() {
         int count = 0;
@@ -125,5 +130,8 @@ public class SI2026Lab1Main {
 
         System.out.println("Library initialized.");
         System.out.println(library.searchBookByTitle("1984"));
+
+
+        library.printBooksByGenre("Programming");
     }
 }
